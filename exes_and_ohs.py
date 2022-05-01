@@ -22,9 +22,11 @@ def xo(s):
 '''
 Now the cleaner and clevar solution:
 '''
+
 def xo(s):
     s = s.lower()
     return s.count('x') == s.count('o')
+
 
 '''
 This is brilliant.
