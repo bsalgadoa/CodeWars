@@ -32,7 +32,6 @@ def create_phone_number(n):
     return "({}) {}-{}".format(first3_str, second3_str, last4_str)
 
 
-
 '''
 Above is my begginer solution.
 Now the freakin clever and awsome solution!!
