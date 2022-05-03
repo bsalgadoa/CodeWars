@@ -47,10 +47,10 @@ sum_parentheses = count_left_parentheses + count_right_parentheses
 sum_bracket = count_left_bracket + count_right_brackets
 sum_curly = count_left_curly + count_right_curly
 
-if sum_curly + sum_bracket + sum_parentheses == 0:
-    print(True)
-else:
+if sum_curly or sum_bracket or sum_parentheses != 0:
     print(False)
+else:
+    print(True)
 
 print(count_left_parentheses)
 print(count_right_parentheses)
