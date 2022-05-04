@@ -33,22 +33,33 @@
 
 
 
-lst1 = [1, 2, 3]
-lst2 = [3, 4, 1]
+# lst1 = [1, 2, 3]
+# lst2 = [3, 4, 1]
+#
+# rev_lst2 = []
+# a = -1
+# for i in lst2:
+#     rev_lst2.append(lst2[a])
+#     a = a -1
+# print(rev_lst2)
+#
+# for i in range(len(lst1)):
+#     if lst1[i] != rev_lst2[i]:
+#         print(False)
+#         break
+# else: print(True)
 
-rev_lst2 = []
-a = -1
-for i in lst2:
-    rev_lst2.append(lst2[a])
-    a = a -1
-print(rev_lst2)
-
-for i in range(len(lst1)):
-    if lst1[i] != rev_lst2[i]:
-        print(False)
-        break
-else: print(True)
 
 
+def validBraces(string):
+    braces = {"(": ")", "[": "]", "{": "}"}
+    stack = []
+    for character in string:
+        if character in braces.keys():
+            stack.append(character)
+        else:
+            if len(stack) == 0 or braces[stack.pop()] != character:
+                return False
+    return len(stack) == 0
 
-#Uncomment the lines below when your function is done
+print(validBraces("[(())]"))

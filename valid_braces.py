@@ -1,6 +1,27 @@
+'''Write a function that takes a string of braces, and determines if the order of the braces is valid. It should return true if the string is valid, and false if it's invalid.
+
+This Kata is similar to the Valid Parentheses Kata, but introduces new characters: brackets [], and curly braces {}. Thanks to @arnedag for the idea!
+
+All input strings will be nonempty, and will only consist of parentheses, brackets and curly braces: ()[]{}.
+
+What is considered Valid?
+A string of braces is considered valid if all braces are matched with the correct brace.
+
+Examples
+"(){}[]"   =>  True
+"([{}])"   =>  True
+"(}"       =>  False
+"[(])"     =>  False
+"[({})](]" =>  False
+'''
+
+
+'''!!this is my answer but in the end there's a cleanest way of doing it!!'''
+
 def valid_braces(string):
 
-    # we need to check if the next brace in the string is ok
+    # we need to check if the next brace in the string does not invalidate the string.
+    # for a valid string, after an open braces you can't have a close that it's different.
     # and also we need to make sure that the last char in string isn't an open brace
     count = 1
     for braces in string:
@@ -59,3 +80,14 @@ def valid_braces(string):
 #        return False
 #
 #    return True
+
+''' now the cleanst solution i've seen: (not mine)
+some say it's not efficient and time consuming'''
+# this works by removing the matches.
+# if the final string it's empty, the string was a valid braces.
+def validBraces(s):
+  while '{}' in s or '()' in s or '[]' in s:
+      s=s.replace('{}','')
+      s=s.replace('[]','')
+      s=s.replace('()','')
+  return s==''
