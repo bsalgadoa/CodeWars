@@ -68,7 +68,7 @@
 #pares = [10, 20, 30 ,40]
 # for i in range(5, 10):
 #     print (i)
-#     #print (pares[i])
+#     #print (pares[i])e10
 #
 # print(list(range(5)))
 
@@ -101,9 +101,24 @@
 #
 # plt.show()
 
+#
+# def solution(a, b):
+#     return b == a[-1*len(b):]
+#
+# print(solution('aaa', 'a')) # returns true
+# #print(solution('abc', 'd')) # returns false
 
-def solution(a, b):
-    return b == a[-1*len(b):]
 
-print(solution('aaa', 'a')) # returns true
-#print(solution('abc', 'd')) # returns false
+def diamond(n):
+    if n > 0 and n % 2 == 1:
+        diamond = ""
+        for i in range(n):
+            diamond += " " * abs((n//2) - i)
+            diamond += "*" * (n - abs((n-1) - 2 * i))
+            diamond += "\n"
+        return diamond
+    else:
+        return None
+print(diamond(7))
+
+print((7//2))
