@@ -12,7 +12,7 @@ HOWEVER, and this is IMPORTANT, please do not use them to cheat on the platform!
    * Codewars is a great way to practice and learn, and the rank and honor that you have, mean that you really worked for that.
    * I'm aware that creating a repository like this is discouraged by Codewars and I'm only sharing it to show my effort and method as a self-learner!
 
-Now that you'll not use them too cheat :)
+Now that you'll not use them to cheat :)
 <br>..I'm always learning so if you have a better approach or solution, I would love to hear it and learn from you!
 
 Feel free to check them out and reach me!
