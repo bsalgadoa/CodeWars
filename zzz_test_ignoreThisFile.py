@@ -1,5 +1,5 @@
 #-----------------------------------------------------------------
-# IGNORE THIS - THIS IS MY PERSONAL TEST FILE THAT I USE DAILY TO QUICKLY TEST DOUBTS 
+# IGNORE THIS - THIS IS MY PERSONAL TEST FILE THAT I USE DAILY TO QUICKLY TEST DOUBTS
 ##-----------------------------------------------------------------
 # lst = [1, 2, 5]
 #
@@ -30,6 +30,9 @@
 # n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 #
 # print("({}{}{}) {}{}{}-{}{}{}{}".format(*n))
+
+
+
 
 
 
@@ -92,15 +95,31 @@
 
 # from matplotlib import pyplot as plt
 #
-# import random
-#
-# numbers_a = range(1,13)
-#
-# numbers_b = [random.randint(1,1000) for i in numbers_a]
-#
-# plt.plot(numbers_a,numbers_b)
-#
-# plt.show()
+import random
+
+numbers = list(range(1,51))
+stars = list(range(1,13))
+
+
+random_number1 = random.randint(1,50)
+random_number2 = random.randint(1,50)
+random_number3 = random.randint(1,50)
+random_number4 = random.randint(1,50)
+random_number5 = random.randint(1,50)
+random_star1 = random.randint(1,12)
+random_star2 = random.randint(1,12)
+
+#print(random_number1)
+#print(random_number2)
+#print(random_number3)
+#print(random_number4)
+#print(random_number5)
+
+print(random_star1)
+#print(random_star2)
+
+
+
 
 #
 # def solution(a, b):
@@ -110,16 +129,16 @@
 # #print(solution('abc', 'd')) # returns false
 
 
-def diamond(n):
-    if n > 0 and n % 2 == 1:
-        diamond = ""
-        for i in range(n):
-            diamond += " " * abs((n//2) - i)
-            diamond += "*" * (n - abs((n-1) - 2 * i))
-            diamond += "\n"
-        return diamond
-    else:
-        return None
-print(diamond(7))
-
-print((7//2))
+# def diamond(n):
+#     if n > 0 and n % 2 == 1:
+#         diamond = ""
+#         for i in range(n):
+#             diamond += " " * abs((n//2) - i)
+#             diamond += "*" * (n - abs((n-1) - 2 * i))
+#             diamond += "\n"
+#         return diamond
+#     else:
+#         return None
+# print(diamond(7))
+#
+# print((7//2))
