@@ -8,6 +8,26 @@ Allowed characters are uppercase / lowercase latin letters and digits from 0 to 
 No whitespaces / underscore
 '''
 
+
+qwe = "PassW0rd"
+
 def alphanumeric(password):
-    for letter in
-    return password.isdigit()
+    if password == "":
+        return False
+    for i in password:
+        if i.isdigit() or i.isalpha():
+            pass
+        else: return False
+    return True
+
+print(alphanumeric(qwe))
+
+
+'''
+Now the simpler solution:
+
+def alphanumeric(string):
+    return string.isalnum()
+
+just learned about isalnum() wich i didn't knew :)
+'''
