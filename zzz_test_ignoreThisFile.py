@@ -100,7 +100,6 @@ import random
 numbers = list(range(1,51))
 stars = list(range(1,13))
 
-
 random_number1 = random.randint(1,50)
 random_number2 = random.randint(1,50)
 random_number3 = random.randint(1,50)
@@ -109,14 +108,19 @@ random_number5 = random.randint(1,50)
 random_star1 = random.randint(1,12)
 random_star2 = random.randint(1,12)
 
-#print(random_number1)
-#print(random_number2)
-#print(random_number3)
-#print(random_number4)
-#print(random_number5)
+print(random_number1)
+print(random_number2)
+print(random_number3)
+print(random_number4)
+print(random_number5)
 
 print(random_star1)
-#print(random_star2)
+print(random_star2)
+if
+if (false, ): 
+    print ("banana")
+else:
+    print ("ananas")
 
 
 
