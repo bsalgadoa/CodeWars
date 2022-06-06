@@ -38,7 +38,8 @@ def comp(array1, array2):
     #    return False
     else:
         return sum(abs(i) for i in array1) == sum(i**0.5 for i in array2)
-
+        # or
+        #return sum(i*i for i in array1) ==  sum(array2)
 
 '''
 Clever not mine:
