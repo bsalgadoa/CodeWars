@@ -19,17 +19,12 @@ Examples
 
 
 def remove_smallest(numbers):
-
     new_list = numbers[:]
 
     if new_list:
-        lowest = new_list[0]
-        for number in new_list:
-            if number < lowest: lowest = number
-        new_list.remove(lowest)
+        new_list.remove(min(new_list))
 
     return new_list
-
 
 A = [5,3,2,1,4]
 
